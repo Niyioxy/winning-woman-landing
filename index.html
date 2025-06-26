@@ -3,84 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Winning Woman – Order Now</title>
+  <title>The Winning Woman</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdf6f9;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff5fa;
       color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 700px;
-      margin: 40px auto;
       padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #ba265d;
       text-align: center;
     }
-    .book-cover {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      margin-bottom: 20px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    .intro {
+      margin: 20px 0;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    form {
+      background-color: #fefefe;
+      padding: 20px;
+      border: 1px solid #ddd;
       border-radius: 8px;
-    }
-    h1, h2 {
-      color: #ba265d;
-    }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 25px;
-    }
-    .cta-button {
-      background-color: #ba265d;
-      color: #fff;
-      padding: 15px 30px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      display: inline-block;
-      margin: 10px;
-    }
-    .cta-button:hover {
-      background-color: #991e4b;
-    }
-    .contact {
       margin-top: 30px;
-      font-size: 0.95rem;
-      color: #555;
     }
-    .section {
-      margin-top: 40px;
-      text-align: left;
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background-color: #ba265d;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #991f4a;
+    }
+    .links {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .links a {
+      color: #ba265d;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="book_cover.jpg" alt="The Winning Woman Book Cover" class="book-cover" />
-    <h1>The Winning Woman</h1>
-    <p>A powerful guide by Toyin Bami-Daramola to help you heal, grow, and walk boldly in purpose. Start your journey today.</p>
-    <a class="cta-button" href="https://selar.com/m/oluwatoyin-bami-daramola1" target="_blank">Order Now on Selar</a>
-    <a class="cta-button" href="https://www.amazon.com/dp/B0FCMQYZBJ?ref_=pe_93986420_774957520" target="_blank">Order on Amazon</a>
 
-    <div class="section">
-      <h2>About the Author</h2>
-      <p>Toyin Bami-Daramola is a writer, speaker, and mentor with a heart for women in transition. With over a decade of ministry and personal healing experience, she brings both spiritual depth and practical wisdom to help women become whole, emotionally strong, and spiritually rooted.</p>
-    </div>
+  <h1>The Winning Woman</h1>
+  <p class="intro">
+    Discover the healing power of grace, identity, and spiritual restoration.
+    This book is a call to every woman who’s been bruised by life but is ready to rise again.
+  </p>
 
-    <div class="section">
-      <h2>Excerpt from the Book</h2>
-      <p><em>"Fixing you isn’t shame. It’s strategy. Healing isn’t a destination—it’s a decision you make over and over again, until what once broke you no longer defines you."</em></p>
-      <p><em>"You are not too far gone to be redeemed. God specializes in broken vessels. What left you shattered, He uses to shape you."</em></p>
-    </div>
+  <form name="winningwoman-leads" method="POST" data-netlify="true" action="/thank-you">
+    <input type="hidden" name="form-name" value="winningwoman-leads" />
+    
+    <label for="name">Full Name</label>
+    <input type="text" name="name" required>
+    
+    <label for="email">Email Address</label>
+    <input type="email" name="email" required>
 
-    <div class="contact">
-      <p>Need help ordering? Call or WhatsApp: <strong>0813 638 3828</strong></p>
-    </div>
+    <label for="whatsapp">WhatsApp Number</label>
+    <input type="text" name="whatsapp">
+
+    <button type="submit">Join the Journey</button>
+  </form>
+
+  <div class="links">
+    <p>Already ready to purchase?</p>
+    <a href="https://thewinningwoman.netlify.app/" target="_blank">Visit Official Landing Page</a>
+    <br><br>
+    <a href="https://wa.me/2348136383828?text=I%20want%20to%20learn%20more%20about%20The%20Winning%20Woman" target="_blank">
+      Chat on WhatsApp
+    </a>
   </div>
+
+  <footer>
+    &copy; 2025 The Winning Woman | Toyin Bami-Daramola
+  </footer>
+
 </body>
 </html>
