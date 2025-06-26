@@ -2,105 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Winning Woman</title>
   <style>
+    :root {
+      --primary: #ba265d;
+      --bg: #fff5fa;
+      --text: #333;
+      --input: #f9f9f9;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fff5fa;
-      color: #333;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      margin: 50px auto;
+      text-align: center;
+    }
+
     h1 {
-      color: #ba265d;
-      text-align: center;
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 10px;
     }
+
     .intro {
-      margin: 20px 0;
-      font-size: 18px;
+      font-size: 1.1rem;
       line-height: 1.6;
-      text-align: center;
+      margin-bottom: 40px;
     }
+
     form {
-      background-color: #fefefe;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      margin-top: 30px;
+      background: white;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: left;
     }
+
     label {
       display: block;
-      margin: 10px 0 5px;
-      font-weight: bold;
+      margin-bottom: 6px;
+      font-weight: 600;
     }
-    input, button {
+
+    input {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
+      padding: 12px 15px;
+      margin-bottom: 20px;
       font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: var(--input);
     }
+
     button {
-      background-color: #ba265d;
+      width: 100%;
+      background-color: var(--primary);
       color: white;
       border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 8px;
       cursor: pointer;
     }
+
     button:hover {
-      background-color: #991f4a;
+      background-color: #9c1f4f;
     }
+
     .links {
-      margin-top: 40px;
-      text-align: center;
+      margin-top: 30px;
+      font-size: 0.95rem;
     }
+
     .links a {
-      color: #ba265d;
+      color: var(--primary);
       text-decoration: none;
-      margin: 10px;
+      font-weight: 600;
       display: inline-block;
-      font-weight: bold;
+      margin: 10px 0;
     }
+
     footer {
-      margin-top: 50px;
-      text-align: center;
-      font-size: 14px;
+      margin: 40px auto 20px;
+      font-size: 0.85rem;
       color: #999;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 30px auto;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .intro {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>The Winning Woman</h1>
+  <div class="container">
+    <h1>The Winning Woman</h1>
+    <p class="intro">
+      Discover the healing power of grace, identity, and spiritual restoration.<br />
+      This book is a call to every woman who’s been bruised by life but is ready to rise again.
+    </p>
 
-  <p class="intro">
-    Discover the healing power of grace, identity, and spiritual restoration.<br>
-    This book is a call to every woman who’s been bruised by life but is ready to rise again.
-  </p>
+    <form name="winningwoman-leads" method="POST" data-netlify="true" action="/thank-you">
+      <input type="hidden" name="form-name" value="winningwoman-leads" />
+      
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" required>
 
-  <form name="winningwoman-leads" method="POST" data-netlify="true" action="/thank-you">
-    <input type="hidden" name="form-name" value="winningwoman-leads" />
-    
-    <label for="name">Full Name</label>
-    <input type="text" name="name" required>
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" required>
 
-    <label for="email">Email Address</label>
-    <input type="email" name="email" required>
+      <label for="whatsapp">WhatsApp Number</label>
+      <input type="text" name="whatsapp" id="whatsapp">
 
-    <label for="whatsapp">WhatsApp Number</label>
-    <input type="text" name="whatsapp">
+      <button type="submit">Join the Journey</button>
+    </form>
 
-    <button type="submit">Join the Journey</button>
-  </form>
-
-  <div class="links">
-    <p>Already ready to purchase?</p>
-    <a href="https://thewinningwoman.netlify.app/" target="_blank">Visit Official Landing Page</a><br><br>
-    <a href="https://wa.me/2348136383828?text=I%20want%20to%20learn%20more%20about%20The%20Winning%20Woman" target="_blank">
-      Chat on WhatsApp
-    </a>
+    <div class="links">
+      <p>Already ready to purchase?</p>
+      <a href="https://thewinningwoman.netlify.app/" target="_blank">Visit the Full Site</a><br>
+      <a href="https://wa.me/2348136383828?text=I%20want%20to%20learn%20more%20about%20The%20Winning%20Woman" target="_blank">
+        Chat with us on WhatsApp
+      </a>
+    </div>
   </div>
 
   <footer>
