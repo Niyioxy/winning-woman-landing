@@ -4,81 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Winning Woman | You Were Made to Win</title>
-
-  <!-- AOS CSS for animations -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-  <!-- Your main stylesheet -->
+  <!-- AOS Animation Library CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Your CSS -->
   <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
-  <!-- HERO -->
+  <meta name="description" content="You Were Made to Win. Get The Winning Woman Book + Confession Guide Today. Heal, grow, and walk in God's design.">
+</head>
+
+<body>
+  <!-- Hero Section -->
   <header class="hero" data-aos="fade-in">
     <h1 class="headline" data-aos="zoom-in-up">You Were Made to Win</h1>
     <p class="sub-headline" data-aos="fade-up">Get The Winning Woman Book + Confession Guide Today</p>
   </header>
 
-  <!-- PRODUCT SECTION -->
+  <!-- Product Section -->
   <section class="product" data-aos="fade-up">
     <div class="product-images">
-       <img src="book_cover.jpg" alt="The Winning Woman Book Cover" style="max-width: 300px;
-       <img src="toyin-daramola.jpg" alt="Toyin Bami-Daramola">
+      <img src="images/book_cover.jpg" alt="The Winning Woman Book Cover" data-aos="zoom-in">
     </div>
     <div class="product-details">
-      <p class="price" data-aos="zoom-in">₦4000 on Selar / $4 on Amazon</p>
-      <a class="buy-button" data-aos="zoom-in" href="https://selar.com/m/oluwatoyin-bami-daramola1" target="_blank">Buy on Selar</a>
-      <a class="buy-button secondary" data-aos="zoom-in" href="https://www.amazon.com/dp/YOUR_AMAZON_LINK" target="_blank">Buy on Amazon</a>
+      <p class="price" data-aos="fade-up">
+        <strong>₦4000 on Selar</strong> / <strong>$4 on Amazon</strong>
+      </p>
+      <a class="buy-button" data-aos="zoom-in" href="https://selar.com/m/oluwatoyin-bami-daramola1" target="_blank">
+        Buy on Selar
+      </a>
+      <a class="buy-button secondary" data-aos="zoom-in" href="https://www.amazon.com/dp/YOUR_AMAZON_LINK" target="_blank">
+        Buy on Amazon
+      </a>
     </div>
   </section>
 
-  <!-- BENEFITS SECTION -->
+  <!-- Benefits Section -->
   <section class="benefits" data-aos="fade-up">
     <h2>Why You Need This Book</h2>
-    <p>The Winning Woman is your invitation to step out of cycles of self-doubt, emotional pain, and spiritual stagnation—and into God's design for you to thrive. Get practical guidance and 5 days of daily confessions to anchor your healing and growth.</p>
+    <p>
+      The Winning Woman is your invitation to step out of cycles of self-doubt, emotional pain, and spiritual stagnation—and into God's design for you to thrive. 
+      Get practical guidance and 5 days of daily confessions to anchor your healing and growth.
+    </p>
   </section>
 
-  <!-- CTA SECTION -->
-  <section class="cta" data-aos="fade-up">
+  <!-- CTA Section -->
+  <section class="cta" data-aos="fade-in">
     <h2>Ready to Start Winning?</h2>
-    <a class="buy-button large" href="https://selar.com/m/oluwatoyin-bami-daramola1" target="_blank">Get Instant Access Now</a>
+    <a class="buy-button large" href="https://selar.com/m/oluwatoyin-bami-daramola1" target="_blank" data-aos="zoom-in">
+      Get Instant Access Now
+    </a>
     <p class="whatsapp-link">
       Or chat with us on <a href="https://wa.me/2348136383828" target="_blank">WhatsApp: +2348136383828</a>
     </p>
   </section>
 
-  <!-- AUTHOR SECTION -->
+  <!-- Author Section -->
   <section class="author" data-aos="fade-up">
     <h2>About the Author</h2>
     <div class="author-content">
-       <img src="toyin-daramola.jpg" alt="Toyin Bami-Daramola"> data-aos="fade-right" />
-      <p data-aos="fade-left">Toyin Bami-Daramola is a faith-based mentor and writer passionate about helping women discover healing, purpose, and God's original design for their lives. Through The Winning Woman, she shares an honest, practical roadmap for spiritual and emotional restoration.</p>
+      <img src="images/toyin-daramola.jpg" alt="Author Toyin Bami-Daramola" data-aos="fade-right">
+      <p data-aos="fade-left">
+        Toyin Bami-Daramola is a faith-based mentor and writer passionate about helping women discover healing, purpose, and God's original design for their lives. Through The Winning Woman, she shares an honest, practical roadmap for spiritual and emotional restoration.
+      </p>
     </div>
   </section>
 
-  <!-- TESTIMONIAL SECTION -->
-  <section class="testimonial" data-aos="zoom-in">
+  <!-- Testimonial Section -->
+  <section class="testimonial" data-aos="fade-up">
     <h2>Hear from Our Readers</h2>
-    <div class="video-wrapper">
-      <!-- Replace this with your actual video link -->
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Testimonial Video" frameborder="0" allowfullscreen></iframe>
+    <div class="video-wrapper" data-aos="zoom-in">
+      <!-- Replace this with your actual video link or YouTube embed -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+        title="Testimonial Video" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 The Winning Woman. All rights reserved.</p>
   </footer>
 
-  <!-- AOS Animation Script -->
+  <!-- AOS Animation Library JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
       duration: 1000,
-      once: true
+      once: true,
     });
   </script>
 </body>
