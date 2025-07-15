@@ -219,6 +219,31 @@ header.hero .sub-headline {
   transition: transform 0.3s ease;
 }
 
+/* Guarantee Section */
+.guarantee {
+  background-color: #FFFFFF;
+  padding: 60px 20px;
+  border-top: 4px solid #6C584C;
+  border-bottom: 4px solid #E1AD01;
+  text-align: center;
+}
+
+.guarantee h2 {
+  font-family: 'Playfair Display', serif;
+  color: #6C584C;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.guarantee p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #444444;
+  line-height: 1.8;
+}
+
+
 .author-content img:hover {
   transform: scale(1.03);
 }
