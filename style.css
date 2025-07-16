@@ -285,7 +285,56 @@ header.hero .sub-headline {
 }
 
 
-.guarantee h2 {
+.guarantee h2 /* Contact / Support Section */
+.contact {
+  background-color: #6C584C;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.contact p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.2rem;
+  color: #F8F4E3;
+  line-height: 1.6;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #E1AD01;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #c89100;
+  box-shadow: 0 0 10px rgba(225, 173, 1, 0.5);
+}
+
+@media (max-width: 768px) {
+  .contact p {
+    font-size: 1rem;
+  }
+
+  .whatsapp-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
   font-family: 'Playfair Display', serif;
   color: #6C584C;
   font-size: 2rem;
