@@ -318,6 +318,70 @@ header.hero .sub-headline {
   text-align: center;
 }
 
+/* Text Testimonials Section */
+.testimonials {
+  background-color: #FFFFFF;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 4px solid #E1AD01;
+}
+
+.testimonials h2 {
+  font-family: 'Playfair Display', serif;
+  color: #6C584C;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #F8F4E3;
+  border-left: 5px solid #E1AD01;
+  padding: 20px 25px;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.03);
+}
+
+.testimonial-card p {
+  font-size: 1.1rem;
+  color: #444444;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.testimonial-card span {
+  display: block;
+  font-weight: bold;
+  color: #6C584C;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .testimonial-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    max-width: 100%;
+  }
+}
+
 .testimonial h2 {
   font-size: 2.2rem;
 }
